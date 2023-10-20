@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatando Strings</title>
     <style>
-        body{
-            background-color: darkblue;
-        }
-        h1{
-            color: rgb(255, 183, 0);
-        }
         p{
             color: white;
         }
@@ -20,7 +14,11 @@
     <h1>Formatando Strings</h1>
    
    <script>
-       var s = 'JavaScript'
+       var nome = window.prompt('Qual o seu nome ?')
+       
+       document.write(`O seu nome é <strong>${nome}</strong> e tem ${nome.length} letras<br>`)
+       document.write(`Seu nome em letras maiúsculas fica assim ${nome.toUpperCase()}<br>`)
+       document.write(`Seu nome em letras minúsculas fica assim ${nome.toLowerCase()}<br>`)
        
    </script>
 </body>
