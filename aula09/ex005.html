@@ -25,8 +25,9 @@
          d.style.background = 'green'
          d.innertext = 'Estou aguardando'
          */
-        var d = window.document.getElementsByName('msg')[0]
-        d.innerText = 'Olá'
+        var d = window.document.querySelector('div.msg')
+        //uma tag é representada por um '.' quando é uma classe, também pode ser usado o '#' quando ela for um ID. 
+        d.style.background = 'Blue'
     </script>
 </body>
 </html>
