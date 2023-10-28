@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+        
+        input{
+            font: normal 18px Arial;
+            width: 80px;
+        }
+
+        div#res{
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Somando os valores</h1>
+    <input type="number" name="box1" id="ibox1"> +
+    <input type="number" name="box2" id="ibox2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado <!--por ter uma função declarada na parte de javascript, o texto 'Resultado' se modifica pelo texto declarado na função a partir do JavaScript !--> </div>
+    <script>
+        function somar() { //função feita para ser ativada assim que o usuário realiza a soma
+
+        //primeira parte do código do javascript feita para inicialmente declarar as variáveis e qual elemento ela irá trabalhar
+        var a = window.document.getElementById('ibox1')
+        var b = window.document.querySelector('input#ibox2')
+        var res = window.document.getElementById('res')
+
+        //segunda part do código, nessa parte as váriaveis já tem o valor definido e precisamos entregar sentidos operacionais para elas
+        var n1 = Number(a.value)
+        var n2 = Number(b.value)
+        var s = n1 + n2 
+        
+        //parte feita para escrita do resultado na tela, a váriavel 'res' está diretamente ligada ao ID res declarado na parte html do código. com o 'innerHTML' declarado nessa parte, conseguimos acessar a div e entregar o texto a baixo lá
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+    }
+    </script>
+</body>
+</html>
