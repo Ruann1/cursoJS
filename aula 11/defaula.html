@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Você é estrangeiro ?</title>
+    <title>Você é estrangeiro?</title>
     <style>
         body{
             font: normal 16px arial
@@ -11,31 +11,26 @@
     </style>
 </head>
 <body>
-    <h1>Você é estrangeiro ?</h1>
-    <br>
-    <p><strong>Você está morando na Inglaterra!</strong></p>
-    Escreva a sua nacionalidade:
-    <input type="text" name="txtnac" id="itxt">
+    <h1>Você é estrangeiro?</h1>
+    Você nasceu em qual pais? Digite ao lado:
+    <input type="text" name="pais" id="ipais"> <!--Se não reconhecer como texto, nunca vou conseguir acabar esse desafio-->
     <input type="button" value="Enviar" onclick="enviar()">
-    <div id="res"></div>
+    <p><div id="res"></div></p>
+
+    <script>
+
+        function enviar(){
+
+        var nac = document.getElementById('ipais')
+        var res = document.getElementById('res')
+        
+        if(nac == 'Brasil'){
+            res.innerHTMLav = 'Então você é Brasileiro!'
+        }
+        
+        
+
+    }
+    </script>
 </body>
-<script>
-    
-    var pais = 'Inglês'
-    var nac = document.querySelector('id#send')
-
-    function enviar() {
-        var nac = document.querySelector('input#itxt')
-        
-        
-    } 
-
-    
-    
-
-
-
-
-
-</script>
 </html>
