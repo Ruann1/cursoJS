@@ -13,22 +13,31 @@
 <body>
     <h1>Você é estrangeiro?</h1>
     Você nasceu em qual pais? Digite ao lado:
-    <input type="text" name="pais" id="ipais"> <!--Se não reconhecer como texto, nunca vou conseguir acabar esse desafio-->
-    <input type="button" value="Enviar" onclick="enviar()">
-    <p><div id="res"></div></p>
+    <input type="text" name="pais" id="ipais"> 
+    <input type="button" value="Enviar" onclick ="enviar()">
+    <p><div id = texto1></div></p>
+    <p><div id="demo"></div></p>
 
     <script>
-
-        function enviar(){
-
-        var nac = document.getElementById('ipais')
-        var res = document.getElementById('res')
         
-        if(nac == 'Brasil'){
-            res.innerHTMLav = 'Então você é Brasileiro!'
+
+        function enviar() { 
+
+        var nac = document.getElementById("ipais")
+        var txt1 = document.getElementById('texto1')
+        let res
+
+        var teste = (nac.value) 
+
+        txt1.innerHTML = (`Você mora no(a) <strong>${teste}</strong>!`)
+        
+        if (teste == 'Brasil') {
+            res = 'Você é <strong>Brasileiro</strong>.'
+        } else {
+            res = 'Você é <strong>Estrangeiro</strong>.'
         }
         
-        
+        document.getElementById("demo").innerHTML = res
 
     }
     </script>
