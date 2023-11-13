@@ -9,15 +9,29 @@
 <body onload="carregar()">
     <header>
         <h1>
-            Hora do Dia
+            Verificador de Idade
         </h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div>
+            <p>Ano de nascimento:
+                <input type="number" name="ano" id="iano" min="0">
+            </p>
+            <p>Sexo:
+                
+                <input type="radio" id="mas" name="sexo" value="mas" checked />
+                <label for="mas">Masculino</label>
+                <input type="radio" id="fem" name="sexo" value="fem" />
+                <label for="fem">Feminino</label>
+                  
+                
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verif()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="Imagens/manha.png" alt="">
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </section>
     <footer>

@@ -21,9 +21,8 @@ section{
 }
 
 div{
-    text-align: center;
-    padding: 10px;
-    font: bold 21px Helvetica;
+    text-align: left;
+    font: normal 18px Arial;
 }
 
 footer{
