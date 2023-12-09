@@ -6,7 +6,10 @@ function verif() {
     var ano = data - nascimento        
     
     var res = window.document.getElementById('res')
-    res.innerHTML = `Você nasceu em ${nascimento} e sua idade é ${ano}`
     
+    
+    if (ano < 25) {
+        res.innerHTML = `Você nasceu em ${nascimento} e sua idade é ${ano}`
+    }
 
 }
