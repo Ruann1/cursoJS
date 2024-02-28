@@ -1,0 +1,40 @@
+@charset 'UTF-8';   
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+
+/* 
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs 
+*/
+
+
+@media screen and (max-width: 500px) {
+    #texto{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #frame{
+        min-width: 150px;
+        max-width: 350px;
+        min-height: 200px;
+        max-height: 300px;
+
+        border-radius: 10px;
+    }
+}
