@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escondeu</title>
+    <style>
+
+        #caixa{
+            border: black 2px solid;
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        } 
+
+        #botao{
+           font: bolder 20px Arial;
+           border: rgb(138, 137, 137) 1px solid;
+           width: 180px;
+           height: 90px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <button id="botao" onclick="esconder()">Clique aqui</button>
+    </div>
+
+    <script>
+        function esconder() {
+            var botao = document.getElementById('botao');
+            
+            if(botao.style.display == 'none') {
+                botao.style.display = 'block';
+            } 
+            else {
+                botao.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
