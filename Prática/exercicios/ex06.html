@@ -18,36 +18,37 @@
             border-radius: 8px;
             background-color: green;
             color: white;
-            width: 15.3em;
-            height: 2em;
+            width: 200px;
+            height: 50px;
         }
 
-        p{
+        #caixa{
+            width: 75%;
+            padding: 50px 0px;
+            margin: 0px 100px;
+            background-color: rgba(51, 231, 231, 0.308);
             text-align: center;
-            font-size: 14px;
-            margin: 7px 3px 7px 0px;
-            font-weight: bold;
         }
     </style>
 <body>
 
     <h1>Clique no botão abaixo para esconder a caixa!</h1>
-    <button id="botao" onclick="esconder()"><p>Clique aqui para esconder a caixa</button></div><br><br><br>
+    <button id="botao" onclick="esconder()">Clique para esconder a caixa</button>
+    <br><br><br>
 
-    <div id="caixa">Teste</div>
+    <div id="caixa">Achou</div>
 
     <script>
 
         function esconder(){
 
-            var botao = getElementById('botao');
-            var caixa = getElementById('caixa');
-
-            if(botao.style.display === 'none'){
-                botao.style.display = 'block';
-            }
-
-
+            var x = document.getElementById("caixa");
+            
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
         }
 
     </script>
