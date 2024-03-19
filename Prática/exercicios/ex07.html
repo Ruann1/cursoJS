@@ -38,27 +38,29 @@
     <h1>Contador de cliques</h1>
     <h2>Clique no botão para começar a contagem</h2>
 
-    <button id="botao" onclick=increment()>Clique aqui</button>
-    <p id="contagem">0</p>
+    <button id="botao">Clique aqui</button>
+    <p id="numero">0</p>
 
     <script>
 
-        function increment(){
+        const botao = document.getElementById('botao')
+        const numero = document.getElementById('numero')
 
-            var x = document.getElementById("botao")
+        const valor = () => {
+            numero.innerHTML = count;
+        };
 
-            x.addEventListener("click", increment) {
-                var y = document.getElementById("contagem")
+        let count = 0;
+        let intervalId = 0;
 
-                y.
-            }
-
-        }
-
-
-
-
+        botao.addEventListener('mousedown', () => {
+            intervalId = setInterval(() => {
+                count += 1;
+                updatevalor();
+            });
+        });
 
     </script>
+    
 </body>
 </html>
