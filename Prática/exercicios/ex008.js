@@ -7,9 +7,12 @@ let i = 1;
         console.log(soma)/
     } */ 
 
+
+
 let a = 10
 
-    do{
+    while(a <= 1){
         console.log(a)
-        a + (-1)
-    } while(a <= 1)
+        a--
+    }
+ 
