@@ -9,8 +9,35 @@
     <h1>Faça sua tabuada</h1>
     <div>
         <h2>Escolha um número de 1 a 10:</h2>
-        <input type="number" name="numero" id="inumero">
-        <input type="submit" value="Enviar">
+        <form>
+            <input type="number" id="inumero">
+            <button type="submit" onclick="formulario()">Enviar</button>
+        </form>
     </div>
+    <div id="pagina"></div>
+
+    <script>
+
+        function formulario(){
+
+            let num = window.document.getElementById('inumero');
+
+
+            let tab = Number(num.value)
+
+            let mult = 0
+            let total = tab * mult
+
+            do{
+                tab * mult
+                console.log(`${tab} X ${mult} = ${total}`)
+                mult++
+            }while(mult <= 10);
+
+         
+        }
+    </script>
+    
+
 </body>
 </html>
