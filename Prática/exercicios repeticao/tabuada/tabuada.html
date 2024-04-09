@@ -8,10 +8,10 @@
 <body>
     <h1>Faça sua tabuada</h1>
     <div>
-        <h2>Escolha um número de 1 a 10:</h2>
+        <h2>Escolha um número:</h2>
         <form>
             <input type="number" id="inumero">
-            <button type="submit" onclick="formulario()">Enviar</button>
+            <button type="submit" onclick="formulario()">Calcular</button>
         </form>
     </div>
     <div id="pagina"></div>
@@ -26,16 +26,16 @@
             let tab = Number(num.value)
 
             let mult = 0
-            let total = tab * mult
+            
 
-            do{
-                tab * mult
-                console.log(`${tab} X ${mult} = ${total}`)
+            while(mult <= 10){
+                let total = tab * mult
+                document.getElementById('pagina').innerText =(`${tab} X ${mult} = ${total}`)
                 mult++
-            }while(mult <= 10);
+            }
 
          
-        }
+         } 
     </script>
     
 
