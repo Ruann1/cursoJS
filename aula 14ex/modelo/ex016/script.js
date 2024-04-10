@@ -1,16 +1,20 @@
-let start = 1
-let final = 10
-let passo = 2
+let inicio = window.document.getElementById('istart')
+let ifim = window.document.getElementById('ifim')
+let ipasso = window.document.getElementById('ipasso')
+
+let start = Number(inicio.value)
+let final = Number(ifim.value)
+let passo = Number(ipasso.value)
 let total = start + passo
 
+function go(){
 
-do{
-    console.log(start)
-    start += passo - 1
-}while(start < final);
+    do{
+        window.document.getElementById('conta').innerHTML = start
+        start += passo 
+    } while(start < final);
 
-    if(final != 10){
-        console.log(final)
-    } else{
-        console.log(final)
-    }
+}
+
+
+
