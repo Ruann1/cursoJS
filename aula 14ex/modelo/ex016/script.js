@@ -1,20 +1,30 @@
-let inicio = window.document.getElementById('istart')
-let ifim = window.document.getElementById('ifim')
-let ipasso = window.document.getElementById('ipasso')
+function go() {
+    
+let inicio = document.getElementById('istart')
+let fim = document.getElementById('ifim')
+let passo = document.getElementById('ipasso')
+let conta = document.getElementById('iconta')
 
-let start = Number(inicio.value)
-let final = Number(ifim.value)
-let passo = Number(ipasso.value)
-let total = start + passo
+let s = Number(inicio.value)
+let f = Number(fim.value)
+let p = Number(passo.value)
 
-function go(){
+for(let c = s; c <= f; c += p){
 
-    do{
-        window.document.getElementById('conta').innerHTML = start
-        start += passo 
-    } while(start < final);
+    conta.innerHTML += `${c}`
 
 }
 
+//do{
+//    let c = s
+//    c += p
 
+//}while(c <= f)
 
+//while(c <= f){
+//    let c = s
+//    c += p
+//    conta.innerHTML += `${c}`
+//}
+
+}
