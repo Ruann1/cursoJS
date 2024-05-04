@@ -29,15 +29,4 @@ if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0)
     }
 }
 
-
-
-
-
-    
-
-
-
-
-
-
 }
