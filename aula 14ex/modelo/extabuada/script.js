@@ -1,13 +1,22 @@
 function go() {
 
-    let n = document.getElementById('inum')
-    let t = Number(n.value)
+    let numero = document.getElementById('inum')
+    let r = Number(numero.value)
     let c = 0
-
-    if(c <= 10){
-        icaixa.innerHTML = `${t} x ${c} = Total`
     
+    icaixa.innerHTML = " "
+    
+    if(r){
+        window.alert('Por favor digite um número!')
+    }else{
+        for(let c = 0; c <= 10; c++){
 
+            let total = (c * r)
+            icaixa.innerHTML +=  `${r} x ${c} = ${total}` + '<br>' 
+    
+        }
     }
+
+    
 
 }
