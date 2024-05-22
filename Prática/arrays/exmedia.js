@@ -1,7 +1,11 @@
-let num = [9, 99, 999, 9999, 99999, 999999]
+let num = [1, 3, 5, 6, 8, 11]
 
-for(let i = 0; i <= 5; i++){
-    let soma = num[0] 
-    soma += num[i] 
-    console.log(`${soma}`)
+
+
+for(let i = 0; i <= num.length; i++){
+    if(num[i] / 1 == 1 && num[i] / num[i] == 1){
+        console.log(`${num} é um número primo`)
+    }else{x
+        console.log(`${num} não é um número primo`)
+    }
 }
