@@ -10,26 +10,25 @@ let num = document.getElementById('inum')
 let c = Number(num.value)
 let arr = [];
 
-
-
 if(c == '' || c < 1 || c > 100){
     window.alert('Campo obrigatório invalido!')
 }else{
-
-    for(let i = 0; i < arr.length; i++){
+    caixa.innerHTML += `O Número ${c} foi adicionado! <br>`
+    
+    for(let i = c; i = c.length; i++){
+        arr[i] = c
         
-        arr.push(c)
-        caixa.innerHTML += `O valor ${c} foi adicionado... <br>` 
+        
+    } 
 
-    }
+    cons.innerHTML = `${arr.length}`
 
-
-
+`
     
-    
+
 }
 
-    cons.innerHTML += `${arr[i]}`
+
 
     
 
