@@ -1,22 +1,16 @@
-caixa.innerHTML = ''
+function analise(){
 
-function analise() {
-
-let num = document.getElementById('inum')
-let c = Number(num.value)
-let arr = []
-
-
-if(c == '' || c < 1 || c > 100){
-    window.alert('Campo obrigatório invalido!')
-}else{
+    let num = document.getElementById('inum')
+    let valor = Number(num.value)
+    let array = []
 
     
-    caixa.innerHTML += `O valor ${c} foi adicionado... <br>` 
 
-}
-
-    cons.innerHTML += ` ${arr}`
+    if(valor < 1 || valor > 100 || valor == ''){
+        window.alert('Adicione um número valido')
+    }else{
+        icaixa.innerHTML = `O número ${valor} foi adicionado <br>`
+    }
 
 
 }
