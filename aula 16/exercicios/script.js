@@ -12,7 +12,7 @@ function num(n){
 }
 
 function lista(l, n){
-    if(l.indexOf(n)){
+    if(l.indexOf(Number(n)) != -1){
         return true
     }else{
         return false
@@ -25,7 +25,9 @@ function analise(){
 
 
     if(num(numero.value) && lista(numero.value, arr)){
-        window.alert('Insira um número válido')
+        
+    }else{
+        
     }
 
 }
