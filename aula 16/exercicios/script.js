@@ -45,8 +45,13 @@ function finalizar(){
 
     //Esses são os dados que iremos atrás na função de finalizar
 
-    
+    ultimo.innerHTML = `Temos um total de <strong>${arr.length}</strong> números cadastrados;`
 
+    // i[0] < i[1] max = arr.length
+
+    for(let i = 0; i <= num.value; i++){
+        j
+    }
 
 
 }
