@@ -45,13 +45,18 @@ function finalizar(){
 
     //Esses são os dados que iremos atrás na função de finalizar
 
-    ultimo.innerHTML = `Temos um total de <strong>${arr.length}</strong> números cadastrados;`
+    ultimo.innerHTML = `Temos um total de <strong>${arr.length}</strong> números cadastrados;<br>`
 
     // i[0] < i[1] max = arr.length
 
-    for(let i = 0; i <= num.value; i++){
-        j
+    if(arr[0] <= arr[i]){
+        for(let i = 0; i <= arr.length; i++){
+            ultimo.innerHTML = `O maior número informado é de ${arr[i]}`
+        }
+    else{
+            ultimo.innerHTML = `O maior número informado é de ${arr[0]}`
+        }
+    } 
     }
-
 
 }
