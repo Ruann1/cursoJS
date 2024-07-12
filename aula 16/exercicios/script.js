@@ -45,18 +45,31 @@ function finalizar(){
 
     //Esses são os dados que iremos atrás na função de finalizar
 
-    ultimo.innerHTML = `Temos um total de <strong>${arr.length}</strong> números cadastrados;<br>`
+    if(arr.length == 0){
+        window.alert('Adicione alguns números antes de finalizar!')
+    }else{
+        
+        let maior = 0
+        let menor = 0
+        let soma = 0
+        let total = arr.length
 
-    // i[0] < i[1] max = arr.length
+        for(let i in arr){
+            soma += arr[i]
+            if(arr[i] > maior){
+                maior = arr[i]
+            }
+            if(arr[i] < menor){
+                menor = arr[i]
+            }
+            media = soma / total
+        }
 
-    if(arr[0] <= arr[i]){
-        for(let i = 0; i <= arr.length; i++){
-            ultimo.innerHTML = `O maior número informado é de ${arr[i]}`
-        }
-    else{
-            ultimo.innerHTML = `O maior número informado é de ${arr[0]}`
-        }
-    } 
+
+        ultimo.innerHTML += `Temos um total de <strong>${arr.length}</strong> números analisados!<br>`
+        ultimo.innerHTML += `O maior número analisado foi <strong>${maior}</strong>!<br>`
+        ultimo.innerHTML += `O menor número analisado foi <strong>${menor}</strong>!<br>`
+        ultimo.innerHTML += `Somando todos os valores, temos <strong>${soma}</strong>!<br>`
+        ultimo.innerHTML += `A média dos valores digitados é <strong>${media}</strong>!`
     }
-
 }
