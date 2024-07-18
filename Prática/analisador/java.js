@@ -20,9 +20,11 @@ function presente(n, l){
 
 function analisar(){
     if(valido(num.value) && !presente(num.value, arr)){
-        let opcao = document.createElement('option')
+        let item 
+        item = arr.push(num.value)
         
 
+        
     }else{
         window.alert('Digite um número válido')
     }
