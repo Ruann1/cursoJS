@@ -9,15 +9,18 @@
 <body>
     <div id="borda">
         <header>
-            <h1>Analisador de números</h1>
+            <h1>Analisador de Números</h1>
         </header>
         <div id="numero">
             <label for="inum">Adicione um número de <strong>(0 a 100)</strong>:</label>
             <input type="number" name="num" id="inum">
-            <input type="submit" value="analisar" onclick="analisar()"><br><br><br>
+            <input type="button" value="Analisar" onclick="analisar()"><br><br><br>
         </div>
+
+        <select name="lista" id="ilista" size="6"></select><br><br>
+
         <div id="finalizar">
-            <select name="list" id="ilist"></select><br><br>
+            
             <input type="submit" value="Finalizar" onclick="final()">
         </div>
         <div id="text">

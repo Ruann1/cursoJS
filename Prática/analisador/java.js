@@ -1,4 +1,5 @@
 let num = document.getElementById('inum')
+let lista = document.getElementById('ilista')
 let arr = []
 
 function valido(n){
@@ -20,12 +21,20 @@ function presente(n, l){
 
 function analisar(){
     if(valido(num.value) && !presente(num.value, arr)){
-        let item 
-        item = arr.push(num.value)
         
+        arr.push(Number(num.value))
 
+        let item = document.createElement('option')
+        item.text = `Você adicionou o número ${num.value}`
+        lista.appendChild(item)
         
     }else{
         window.alert('Digite um número válido')
     }
 }
+
+function finalizar(){
+    
+}
+
+    
