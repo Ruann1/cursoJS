@@ -31,10 +31,43 @@ function analisar(){
     }else{
         window.alert('Digite um número válido')
     }
+
+    document.getElementById('text').innerHTML = ''
 }
 
-function finalizar(){
+function final(){
     
+    
+    if(arr.length == 0){
+        document.getElementById('text').innerHTML = 'Análise os números primeiro'
+    }else{
+        document.getElementById('text').innerHTML = `Ao todo temos <strong>${arr.length} números </strong>cadastrados; <br> <br>`
+
+        let maior 
+        let menor
+
+        if(maior >= num.value){
+            document.getElementById('text').innerHTML += `O Maior valor informado foi ${maior}`
+        }else{
+            document.getElementById('text').innerHTML += `O Maior valor informado foi ${num.value}`
+        }
+    
+    }
+
+    
+
+    
+
+ /* 
+ Ao todo temos X números cadastrados;
+ O maior valor informado foi X;
+ O menor valor informado foi X;
+ Somando todos os valores, temos X;
+ A média dos valores digitados é X.
+*/
+
+
+
 }
 
     
