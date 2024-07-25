@@ -43,13 +43,15 @@ function final(){
     }else{
         document.getElementById('text').innerHTML = `Ao todo temos <strong>${arr.length} números </strong>cadastrados; <br> <br>`
 
-        let maior 
-        let menor
+        let maior = 0 
+        let menor = 0
 
-        if(maior >= num.value){
-            document.getElementById('text').innerHTML += `O Maior valor informado foi ${maior}`
-        }else{
-            document.getElementById('text').innerHTML += `O Maior valor informado foi ${num.value}`
+        for(let i in arr){
+            if(arr[i] <= maior){
+                maior = arr[i]
+                document.getElementById('text').innerHTML += `O maior valor informado foi o ${maior}`
+            }
+        }        
         }
     
     }
@@ -68,6 +70,6 @@ function final(){
 
 
 
-}
+
 
     
