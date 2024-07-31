@@ -41,17 +41,32 @@ function final(){
     if(arr.length == 0){
         document.getElementById('text').innerHTML = 'Análise os números primeiro'
     }else{
-        document.getElementById('text').innerHTML = `Ao todo temos <strong>${arr.length} números </strong>cadastrados; <br> <br>`
+        document.getElementById('text').innerHTML += `Ao todo temos <strong>${arr.length} números </strong>cadastrados; <br> <br>`
 
         let maior = 0 
         let menor = 0
+        let soma = 0
+        let total = arr.length
 
         for(let i in arr){
-            if(arr[i] <= maior){
+            soma += arr[i]
+            if(arr[i] > maior){
                 maior = arr[i]
-                document.getElementById('text').innerHTML += `O maior valor informado foi o ${maior}`
             }
-        }        
+            if(arr[i] < menor){
+                menor = arr[i]
+            }
+            media = soma / total
+        }   
+        
+        document.getElementById('text').innerHTML += `O maior valor informado foi o<strong> ${maior}</strong>; <br> <br>`
+
+        document.getElementById('text').innerHTML += `O menor valor informado foi o<strong> ${menor}</strong>;<br> <br>`
+
+        document.getElementById('text').innerHTML += `A Soma dos elementos é <strong> ${soma}</strong>;<br> <br>`
+
+        document.getElementById('text').innerHTML += `A Média dos números analisados é de<strong> ${media}</strong>;<br> <br>`
+
         }
     
     }
